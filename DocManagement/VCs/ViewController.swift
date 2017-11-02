@@ -23,9 +23,13 @@ class ViewController: UIViewController {
             
         }
         
-
-//        Downloader.load(url: , to: <#T##URL#>, completion: <#T##() -> ()#>)
-
+        let template = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("file.XXXXXX") as URL
+        let urlString = URL(string: "https://www.mediafire.com/file/aands9xm93r35zk/forest.zip" )
+        
+//        Downloader.load(url: urlString!) { (data) in
+//
+//        }
+        
 //        do {
 //            let filePath = Bundle.main.url(forResource: "file", withExtension: "zip")!
 //            let documentsDirectory = FileManager.default.urls(for:.documentDirectory, in: .userDomainMask)[0]
@@ -41,6 +45,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         
     }
 
