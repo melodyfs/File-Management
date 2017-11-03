@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import Zip
 
 class Networking {
     
     static var shared = Networking()
     
-    let urlString = "https://api.myjson.com/bins/1165qr"
+    let urlString = "https://api.myjson.com/bins/17i2zn"
     let session = URLSession.shared
     
     func getCollection(completion: @escaping (Data) -> Void) {
@@ -23,13 +24,11 @@ class Networking {
         session.dataTask(with: request) { (data, res, err) in
             if let data = data {
                 completion(data)
-                print(data)
             } else {
                 print(err?.localizedDescription ?? "Error")
             }
 
         }.resume()
-        
     }
     
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Collections: Codable {
+struct Collection: Codable {
     
     var collection_name: String
     var zipped_images_url: URL
