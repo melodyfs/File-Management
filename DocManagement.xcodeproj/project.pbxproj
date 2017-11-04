@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C11B20F1FA906EB00ADB414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11B20E1FA906EB00ADB414 /* AppDelegate.swift */; };
-		6C11B2111FA906EB00ADB414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11B2101FA906EB00ADB414 /* ViewController.swift */; };
+		6C11B2111FA906EB00ADB414 /* PreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11B2101FA906EB00ADB414 /* PreviewVC.swift */; };
 		6C11B2141FA906EB00ADB414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C11B2121FA906EB00ADB414 /* Main.storyboard */; };
 		6C11B2161FA906EB00ADB414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C11B2151FA906EB00ADB414 /* Assets.xcassets */; };
 		6C11B2191FA906EB00ADB414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C11B2171FA906EB00ADB414 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,8 @@
 		6C11B2291FAA6E7F00ADB414 /* DownloadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11B2281FAA6E7F00ADB414 /* DownloadFile.swift */; };
 		6CB390DA1FAC1D6200BCAA9D /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB390D91FAC1D6200BCAA9D /* CollectionCell.swift */; };
 		6CB390DC1FAC1DE500BCAA9D /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB390DB1FAC1DE500BCAA9D /* UIImageExtension.swift */; };
+		6CB390DF1FAD181500BCAA9D /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB390DE1FAD181500BCAA9D /* CollectionVC.swift */; };
+		6CB390E11FAD18A400BCAA9D /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB390E01FAD18A400BCAA9D /* PictureCell.swift */; };
 		71B2D2BB2286BCFABD572B1A /* Pods_DocManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6DAB39023BA50AB1464699 /* Pods_DocManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +26,7 @@
 		04E33884927738E1C2CB8D70 /* Pods-DocManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocManagement.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocManagement/Pods-DocManagement.release.xcconfig"; sourceTree = "<group>"; };
 		6C11B20B1FA906EB00ADB414 /* DocManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C11B20E1FA906EB00ADB414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C11B2101FA906EB00ADB414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C11B2101FA906EB00ADB414 /* PreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVC.swift; sourceTree = "<group>"; };
 		6C11B2131FA906EB00ADB414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C11B2151FA906EB00ADB414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C11B2181FA906EB00ADB414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		6C11B2281FAA6E7F00ADB414 /* DownloadFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadFile.swift; sourceTree = "<group>"; };
 		6CB390D91FAC1D6200BCAA9D /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		6CB390DB1FAC1DE500BCAA9D /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		6CB390DE1FAD181500BCAA9D /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
+		6CB390E01FAD18A400BCAA9D /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		AE6DAB39023BA50AB1464699 /* Pods_DocManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B859E351D0312D18F3922BF1 /* Pods-DocManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocManagement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocManagement/Pods-DocManagement.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6CB390D91FAC1D6200BCAA9D /* CollectionCell.swift */,
+				6CB390E01FAD18A400BCAA9D /* PictureCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,7 +118,8 @@
 		6C11B2241FA9087D00ADB414 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				6C11B2101FA906EB00ADB414 /* ViewController.swift */,
+				6C11B2101FA906EB00ADB414 /* PreviewVC.swift */,
+				6CB390DE1FAD181500BCAA9D /* CollectionVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -268,8 +274,10 @@
 			files = (
 				6C11B2291FAA6E7F00ADB414 /* DownloadFile.swift in Sources */,
 				6C11B2211FA9081000ADB414 /* Networking.swift in Sources */,
+				6CB390DF1FAD181500BCAA9D /* CollectionVC.swift in Sources */,
 				6CB390DC1FAC1DE500BCAA9D /* UIImageExtension.swift in Sources */,
-				6C11B2111FA906EB00ADB414 /* ViewController.swift in Sources */,
+				6C11B2111FA906EB00ADB414 /* PreviewVC.swift in Sources */,
+				6CB390E11FAD18A400BCAA9D /* PictureCell.swift in Sources */,
 				6C11B20F1FA906EB00ADB414 /* AppDelegate.swift in Sources */,
 				6C11B2271FA908A700ADB414 /* Collections.swift in Sources */,
 				6CB390DA1FAC1D6200BCAA9D /* CollectionCell.swift in Sources */,

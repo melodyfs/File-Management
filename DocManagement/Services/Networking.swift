@@ -13,7 +13,7 @@ class Networking {
     
     static var shared = Networking()
     
-    let urlString = "https://api.myjson.com/bins/17i2zn"
+    let urlString = "https://api.myjson.com/bins/17ge17"
     let session = URLSession.shared
     
     func getCollection(completion: @escaping (Data) -> Void) {
