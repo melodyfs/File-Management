@@ -29,23 +29,17 @@ class PreviewVC: UIViewController {
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.collections = list!
+
             }
-            
         }
-     
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
     }
-
 
 }
 
@@ -66,27 +60,19 @@ extension PreviewVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let collection = collections[indexPath.row]
-        performSegue(withIdentifier: "imagesSegue", sender: collection)
-       
         
+        let collectionVC = self.storyboard?.instantiateViewController(withIdentifier: "collectionVC") as! CollectionVC
+        collectionVC.zippedURL = collection.zipped_images_url
+        self.present(collectionVC, animated: false, completion: nil)
+
     }
 }
 
 extension PreviewVC: CollectionCellDelegate {
     func loadImage(_ collection: Collection, _ sender: CollectionCell) {
         DownloadFile.shared.load(url: collection.zipped_images_url) { url in
-//            let fileExist = FileManager.default.fileExists(atPath: "\(url.absoluteString)/")
-//
-//            if fileExist {
-//                print("Downloaded already")
-            
-//            }
             
             let image_url = collection.zipped_images_url.absoluteString
             let startIndex = image_url.index(image_url.startIndex, offsetBy: 40)
@@ -95,10 +81,7 @@ extension PreviewVC: CollectionCellDelegate {
             
 
             let fileURL = try? FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("\(col_name)/_preview.png")
-            
-//            let collectionVC = self.storyboard?.instantiateViewController(withIdentifier: "collectionVC") as! CollectionVC
-//            collectionVC.unzippedURL = fileURL!
-            
+
             DispatchQueue.main.async {
                 guard let imageURL = fileURL?.path else {return}
                 sender.imageView?.image = UIImage(contentsOfFile: imageURL)
